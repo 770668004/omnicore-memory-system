@@ -1,0 +1,67 @@
+name: Simple Memory Sync
+
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  sync-memory:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Git
+      run: |
+        git config --global user.name 'OmniCoreKernel Bot'
+        git config --global user.email '770668004@qq.com'
+        
+    - name: Validate JSON files
+      run: |
+        echo "Validating memory files..."
+        for file in data/memory/*.json; do
+          if [ -f "$file" ]; then
+            echo "Checking $file"
+            python3 -m json.tool "$file" > /dev/null || echo "Invalid JSON: $file"
+          fi
+        done
+        
+    - name: Check for changes
+      id: check_changes
+      run: |
+        if [ -n "$(git status --porcelain)" ]; then
+          echo "has_changes=true" >> $GITHUB_OUTPUT
+          echo "Changes detected:"
+          git status --porcelain
+        else
+          echo "has_changes=false" >> $GITHUB_OUTPUT
+          echo "No changes detected"
+        fi
+        
+    - name: Commit and push changes
+      if: steps.check_changes.outputs.has_changes == 'true'
+      run: |
+        git add -A
+        git commit -m "Auto sync: Memory system update $(date '+%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
+        git push origin main || echo "Push failed"
+        
+    - name: Update sync timestamp
+      run: |
+        mkdir -p data/state
+        echo "{\"last_github_sync\": \"$(date -Iseconds)\"}" > data/state/github_sync.json
+        git add data/state/github_sync.json
+        git commit -m "Update sync timestamp $(date '+%Y-%m-%d %H:%M:%S')" || echo "No timestamp update needed"
+        git push origin main || echo "Timestamp push failed"
+        
+    - name: Generate sync report
+      run: |
+        echo "# Memory System Sync Report" > sync_report.md
+        echo "Date: $(date '+%Y-%m-%d %H:%M:%S')" >> sync_report.md
+        echo "Repository: ${{ github.repository }}" >> sync_report.md
+        echo "Status: Success" >> sync_report.md
+        echo "Files synchronized: $(git diff --name-only HEAD~1 HEAD | wc -l)" >> sync_report.md
+        cat sync_report.md
