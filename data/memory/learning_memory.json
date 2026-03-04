@@ -76,6 +76,1506 @@
         "memory_design",
         "modules"
       ]
+    },
+    {
+      "id": "test_efficiency_0",
+      "topic": "性能测试主题0",
+      "content": "这是第0条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_1",
+      "topic": "性能测试主题1",
+      "content": "这是第1条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_2",
+      "topic": "性能测试主题2",
+      "content": "这是第2条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_3",
+      "topic": "性能测试主题3",
+      "content": "这是第3条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_4",
+      "topic": "性能测试主题4",
+      "content": "这是第4条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_5",
+      "topic": "性能测试主题5",
+      "content": "这是第5条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_6",
+      "topic": "性能测试主题6",
+      "content": "这是第6条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_7",
+      "topic": "性能测试主题7",
+      "content": "这是第7条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_8",
+      "topic": "性能测试主题8",
+      "content": "这是第8条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_9",
+      "topic": "性能测试主题9",
+      "content": "这是第9条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_10",
+      "topic": "性能测试主题10",
+      "content": "这是第10条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_11",
+      "topic": "性能测试主题11",
+      "content": "这是第11条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_12",
+      "topic": "性能测试主题12",
+      "content": "这是第12条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_13",
+      "topic": "性能测试主题13",
+      "content": "这是第13条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_14",
+      "topic": "性能测试主题14",
+      "content": "这是第14条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_15",
+      "topic": "性能测试主题15",
+      "content": "这是第15条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_16",
+      "topic": "性能测试主题16",
+      "content": "这是第16条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_17",
+      "topic": "性能测试主题17",
+      "content": "这是第17条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_18",
+      "topic": "性能测试主题18",
+      "content": "这是第18条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_19",
+      "topic": "性能测试主题19",
+      "content": "这是第19条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_20",
+      "topic": "性能测试主题20",
+      "content": "这是第20条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_21",
+      "topic": "性能测试主题21",
+      "content": "这是第21条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_22",
+      "topic": "性能测试主题22",
+      "content": "这是第22条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_23",
+      "topic": "性能测试主题23",
+      "content": "这是第23条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_24",
+      "topic": "性能测试主题24",
+      "content": "这是第24条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_25",
+      "topic": "性能测试主题25",
+      "content": "这是第25条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_26",
+      "topic": "性能测试主题26",
+      "content": "这是第26条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_27",
+      "topic": "性能测试主题27",
+      "content": "这是第27条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_28",
+      "topic": "性能测试主题28",
+      "content": "这是第28条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_29",
+      "topic": "性能测试主题29",
+      "content": "这是第29条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_30",
+      "topic": "性能测试主题30",
+      "content": "这是第30条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_31",
+      "topic": "性能测试主题31",
+      "content": "这是第31条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_32",
+      "topic": "性能测试主题32",
+      "content": "这是第32条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_33",
+      "topic": "性能测试主题33",
+      "content": "这是第33条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_34",
+      "topic": "性能测试主题34",
+      "content": "这是第34条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_35",
+      "topic": "性能测试主题35",
+      "content": "这是第35条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_36",
+      "topic": "性能测试主题36",
+      "content": "这是第36条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_37",
+      "topic": "性能测试主题37",
+      "content": "这是第37条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_38",
+      "topic": "性能测试主题38",
+      "content": "这是第38条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_39",
+      "topic": "性能测试主题39",
+      "content": "这是第39条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_40",
+      "topic": "性能测试主题40",
+      "content": "这是第40条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_41",
+      "topic": "性能测试主题41",
+      "content": "这是第41条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_42",
+      "topic": "性能测试主题42",
+      "content": "这是第42条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_43",
+      "topic": "性能测试主题43",
+      "content": "这是第43条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_44",
+      "topic": "性能测试主题44",
+      "content": "这是第44条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_45",
+      "topic": "性能测试主题45",
+      "content": "这是第45条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_46",
+      "topic": "性能测试主题46",
+      "content": "这是第46条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_47",
+      "topic": "性能测试主题47",
+      "content": "这是第47条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_48",
+      "topic": "性能测试主题48",
+      "content": "这是第48条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_49",
+      "topic": "性能测试主题49",
+      "content": "这是第49条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_50",
+      "topic": "性能测试主题50",
+      "content": "这是第50条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_51",
+      "topic": "性能测试主题51",
+      "content": "这是第51条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_52",
+      "topic": "性能测试主题52",
+      "content": "这是第52条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_53",
+      "topic": "性能测试主题53",
+      "content": "这是第53条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_54",
+      "topic": "性能测试主题54",
+      "content": "这是第54条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_55",
+      "topic": "性能测试主题55",
+      "content": "这是第55条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_56",
+      "topic": "性能测试主题56",
+      "content": "这是第56条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_57",
+      "topic": "性能测试主题57",
+      "content": "这是第57条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_58",
+      "topic": "性能测试主题58",
+      "content": "这是第58条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_59",
+      "topic": "性能测试主题59",
+      "content": "这是第59条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_60",
+      "topic": "性能测试主题60",
+      "content": "这是第60条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_61",
+      "topic": "性能测试主题61",
+      "content": "这是第61条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_62",
+      "topic": "性能测试主题62",
+      "content": "这是第62条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_63",
+      "topic": "性能测试主题63",
+      "content": "这是第63条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_64",
+      "topic": "性能测试主题64",
+      "content": "这是第64条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_65",
+      "topic": "性能测试主题65",
+      "content": "这是第65条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_66",
+      "topic": "性能测试主题66",
+      "content": "这是第66条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_67",
+      "topic": "性能测试主题67",
+      "content": "这是第67条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_68",
+      "topic": "性能测试主题68",
+      "content": "这是第68条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_69",
+      "topic": "性能测试主题69",
+      "content": "这是第69条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_70",
+      "topic": "性能测试主题70",
+      "content": "这是第70条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_71",
+      "topic": "性能测试主题71",
+      "content": "这是第71条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_72",
+      "topic": "性能测试主题72",
+      "content": "这是第72条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_73",
+      "topic": "性能测试主题73",
+      "content": "这是第73条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_74",
+      "topic": "性能测试主题74",
+      "content": "这是第74条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_75",
+      "topic": "性能测试主题75",
+      "content": "这是第75条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_76",
+      "topic": "性能测试主题76",
+      "content": "这是第76条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_77",
+      "topic": "性能测试主题77",
+      "content": "这是第77条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_78",
+      "topic": "性能测试主题78",
+      "content": "这是第78条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_79",
+      "topic": "性能测试主题79",
+      "content": "这是第79条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_80",
+      "topic": "性能测试主题80",
+      "content": "这是第80条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_81",
+      "topic": "性能测试主题81",
+      "content": "这是第81条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_82",
+      "topic": "性能测试主题82",
+      "content": "这是第82条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_83",
+      "topic": "性能测试主题83",
+      "content": "这是第83条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_84",
+      "topic": "性能测试主题84",
+      "content": "这是第84条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_85",
+      "topic": "性能测试主题85",
+      "content": "这是第85条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_86",
+      "topic": "性能测试主题86",
+      "content": "这是第86条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_87",
+      "topic": "性能测试主题87",
+      "content": "这是第87条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_88",
+      "topic": "性能测试主题88",
+      "content": "这是第88条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_89",
+      "topic": "性能测试主题89",
+      "content": "这是第89条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_90",
+      "topic": "性能测试主题90",
+      "content": "这是第90条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_91",
+      "topic": "性能测试主题91",
+      "content": "这是第91条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_92",
+      "topic": "性能测试主题92",
+      "content": "这是第92条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_93",
+      "topic": "性能测试主题93",
+      "content": "这是第93条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_94",
+      "topic": "性能测试主题94",
+      "content": "这是第94条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_95",
+      "topic": "性能测试主题95",
+      "content": "这是第95条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_96",
+      "topic": "性能测试主题96",
+      "content": "这是第96条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_97",
+      "topic": "性能测试主题97",
+      "content": "这是第97条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_98",
+      "topic": "性能测试主题98",
+      "content": "这是第98条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
+    },
+    {
+      "id": "test_efficiency_99",
+      "topic": "性能测试主题99",
+      "content": "这是第99条测试记忆，用于测试系统效率",
+      "level": "basic",
+      "timestamp": "2026-03-05T01:42:43+08:00",
+      "category": "test",
+      "tags": [
+        "efficiency",
+        "test",
+        "performance"
+      ],
+      "mastery": 0.5,
+      "application_count": 0
     }
   ],
   "skills_developed": [
@@ -135,7 +1635,7 @@
     }
   ],
   "metadata": {
-    "total_knowledge_items": 4,
+    "total_knowledge_items": 104,
     "total_skills": 3,
     "total_insights": 2,
     "total_practice_hours": 2,
