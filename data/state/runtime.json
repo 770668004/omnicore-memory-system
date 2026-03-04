@@ -13,7 +13,7 @@
     "last_sync": "2026-03-05T04:30:00+08:00",
     "sync_status": "fixed",
     "sync_configuration": {
-      "frequency": "10_minutes",
+      "frequency": "30_minutes",
       "branch": "main",
       "remote_configured": true,
       "auto_backup": true,
@@ -59,7 +59,7 @@
         }
       ],
       "auto_sync_enabled": true,
-      "next_sync": "2026-03-05T04:40:00+08:00"
+      "next_sync": "2026-03-05T05:00:00+08:00"
     }
   }
 }
