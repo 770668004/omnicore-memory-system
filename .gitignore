@@ -1,0 +1,35 @@
+# Ignore sensitive and temporary files
+*.log
+*.tmp
+*.bak
+.env
+.secrets
+temp/
+.tmp/
+
+# Ignore local state files that should not be synced
+local_state.json
+session_cache/
+node_modules/
+
+# Ignore backup files (except the ones we explicitly create)
+*.backup
+*.swp
+*.swo
+*~
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.iml
+
+# Keep important files
+!data/memory/*.json
+!data/state/*.json
+!backups/
+!scripts/
+!config/

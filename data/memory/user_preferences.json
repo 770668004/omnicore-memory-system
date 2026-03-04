@@ -1,0 +1,52 @@
+{
+  "user_preferences": {
+    "language": "zh_cn",
+    "timezone": "Asia/Shanghai",
+    "sync_interval": 300,
+    "encryption_enabled": false,
+    "auto_backup": true,
+    "memory_retention_days": 90,
+    "max_memory_items": 1000,
+    "categories": ["system", "user", "context", "project", "learning", "session"],
+    "github_repo": "770668004/omnicore-memory-system",
+    "default_model": "qwen3/kimi-k2-0905",
+    "preferred_voice": "nova",
+    "ui_theme": "dark",
+    "auto_sync": true,
+    "sync_on_startup": true,
+    "sync_on_shutdown": true,
+    "notification_enabled": true
+  },
+  "sync_settings": {
+    "auto_push": true,
+    "auto_pull": true,
+    "conflict_resolution": "merge",
+    "sync_on_startup": true,
+    "sync_on_shutdown": true,
+    "sync_interval_seconds": 300,
+    "retry_attempts": 3,
+    "retry_delay_seconds": 10
+  },
+  "memory_settings": {
+    "compression_enabled": true,
+    "deduplication_enabled": true,
+    "priority_weights": {
+      "high": 1.0,
+      "medium": 0.7,
+      "low": 0.3
+    },
+    "expiration_rules": {
+      "system": 365,
+      "user": 90,
+      "session": 30,
+      "context": 7,
+      "learning": 180
+    }
+  },
+  "security_settings": {
+    "encrypt_sensitive_data": true,
+    "sensitive_categories": ["password", "secret", "private", "api_key"],
+    "backup_encryption": false,
+    "local_encryption_only": true
+  }
+}

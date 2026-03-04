@@ -1,0 +1,110 @@
+name: Sync Memory System
+
+on:
+  push:
+    branches: [ main, master ]
+    paths:
+      - 'data/memory/**'
+      - 'data/state/**'
+  pull_request:
+    branches: [ main, master ]
+  schedule:
+    # 每30分钟自动同步一次
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+jobs:
+  sync-memory:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Setup Git
+      run: |
+        git config --global user.name 'OmniCoreKernel Bot'
+        git config --global user.email '770668004@qq.com'
+    
+    - name: Validate JSON files
+      run: |
+        echo "Validating memory files..."
+        for file in data/memory/*.json; do
+          if [ -f "$file" ]; then
+            echo "Checking $file"
+            python3 -m json.tool "$file" > /dev/null || echo "Invalid JSON: $file"
+          fi
+        done
+        
+        echo "Validating state files..."
+        for file in data/state/*.json; do
+          if [ -f "$file" ]; then
+            echo "Checking $file"
+            python3 -m json.tool "$file" > /dev/null || echo "Invalid JSON: $file"
+          fi
+        done
+    
+    - name: Check for changes
+      id: check_changes
+      run: |
+        if [ -n "$(git status --porcelain)" ]; then
+          echo "has_changes=true" >> $GITHUB_OUTPUT
+          echo "Changes detected:"
+          git status --porcelain
+        else
+          echo "has_changes=false" >> $GITHUB_OUTPUT
+          echo "No changes detected"
+        fi
+    
+    - name: Commit and push changes
+      if: steps.check_changes.outputs.has_changes == 'true'
+      run: |
+        git add -A
+        git commit -m "Auto sync: Memory system update $(date '+%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
+        git push origin ${{ github.ref_name }} || echo "Push failed"
+    
+    - name: Update sync timestamp
+      if: always()
+      run: |
+        # 更新同步时间戳
+        mkdir -p data/state
+        echo "{\"last_github_sync\": \"$(date -Iseconds)\"}" > data/state/github_sync.json
+        
+        git add data/state/github_sync.json
+        git commit -m "Update sync timestamp $(date '+%Y-%m-%d %H:%M:%S')" || echo "No timestamp update needed"
+        git push origin ${{ github.ref_name }} || echo "Timestamp push failed"
+
+  backup-memory:
+    runs-on: ubuntu-latest
+    needs: sync-memory
+    if: always()
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: Create backup archive
+      run: |
+        DATE=$(date '+%Y%m%d_%H%M%S')
+        BACKUP_NAME="memory_backup_${DATE}"
+        
+        # 创建备份目录
+        mkdir -p backups
+        
+        # 创建压缩包
+        tar -czf "backups/${BACKUP_NAME}.tar.gz" data/ --exclude='*.tmp' --exclude='*.log'
+        
+        # 创建备份清单
+        echo "Backup created: ${BACKUP_NAME}" > backups/last_backup.txt
+        echo "Timestamp: $(date -Iseconds)" >> backups/last_backup.txt
+        echo "Files included:" >> backups/last_backup.txt
+        tar -tzf "backups/${BACKUP_NAME}.tar.gz" >> backups/last_backup.txt
+    
+    - name: Upload backup artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: memory-backup-${{ github.run_number }}
+        path: backups/
+        retention-days: 30

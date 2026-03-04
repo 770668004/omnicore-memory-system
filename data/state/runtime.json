@@ -1,0 +1,30 @@
+{
+  "runtime": {
+    "current_session": {
+      "id": "20260305_0034_kousoyu",
+      "start_time": "2026-03-05T00:34:00+08:00",
+      "model": "qwen3/kimi-k2-0905",
+      "status": "active",
+      "user": "kousoyu",
+      "timezone": "Asia/Shanghai",
+      "language": "zh_cn"
+    },
+    "last_sync": null,
+    "sync_status": "pending",
+    "memory_loaded": true,
+    "omnicore_active": true,
+    "system_info": {
+      "hostname": "kousoyu",
+      "platform": "linux",
+      "node_version": "v22.22.0",
+      "arch": "x64",
+      "memory_usage": "normal"
+    },
+    "git_status": {
+      "repository": "770668004/omnicore-memory-system",
+      "branch": "master",
+      "remote_configured": false,
+      "last_commit": null
+    }
+  }
+}
