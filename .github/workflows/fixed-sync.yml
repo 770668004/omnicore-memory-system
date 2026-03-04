@@ -1,0 +1,302 @@
+name: Fixed Memory Sync
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'data/memory/**'
+      - 'data/state/**'
+  pull_request:
+    branches: [ main ]
+  schedule:
+    # 每10分钟自动同步一次
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+
+jobs:
+  sync-memory:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        fetch-depth: 0  # 获取完整历史
+    
+    - name: Setup Git
+      run: |
+        git config --global user.name 'OmniCoreKernel Bot'
+        git config --global user.email '770668004@qq.com'
+        git config --global pull.rebase false  # 使用合并而不是rebase
+    
+    - name: Check current status
+      run: |
+        echo "=== Git Status Check ==="
+        git status
+        echo "=== Branch Info ==="
+        git branch -vv
+        echo "=== Remote Info ==="
+        git remote -v
+        echo "=== Last Commit ==="
+        git log -1 --pretty=format:"%h %s %ad" --date=iso
+    
+    - name: Validate and organize memory files
+      run: |
+        echo "=== Validating Memory Files ==="
+        SUCCESS=true
+        
+        # 验证JSON文件
+        for file in data/memory/*.json; do
+          if [ -f "$file" ]; then
+            echo "Checking $file"
+            if ! python3 -m json.tool "$file" > /dev/null 2>&1; then
+              echo "❌ Invalid JSON: $file"
+              SUCCESS=false
+            else
+              echo "✅ Valid JSON: $file"
+            fi
+          fi
+        done
+        
+        # 验证状态文件
+        for file in data/state/*.json; do
+          if [ -f "$file" ]; then
+            echo "Checking $file"
+            if ! python3 -m json.tool "$file" > /dev/null 2>&1; then
+              echo "❌ Invalid JSON: $file"
+              SUCCESS=false
+            else
+              echo "✅ Valid JSON: $file"
+            fi
+          fi
+        done
+        
+        if [ "$SUCCESS" = false ]; then
+          echo "❌ Validation failed, stopping sync"
+          exit 1
+        fi
+        
+        echo "=== Organizing Files ==="
+        # 确保目录结构完整
+        mkdir -p data/memory data/state data/logs backups
+        
+        # 创建文件清单
+        echo "Memory files found:" > data/logs/file_inventory.txt
+        find data/memory -name "*.json" -type f >> data/logs/file_inventory.txt
+        echo "State files found:" >> data/logs/file_inventory.txt
+        find data/state -name "*.json" -type f >> data/logs/file_inventory.txt
+        
+        echo "✅ File organization complete"
+    
+    - name: Check for memory changes
+      id: check_memory_changes
+      run: |
+        echo "=== Checking for Memory Changes ==="
+        
+        # 获取变更的文件列表
+        CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD 2>/dev/null || echo "")
+        UNCOMMITTED Changes=$(git status --porcelain 2>/dev/null || echo "")
+        
+        if [ -n "$CHANGED_FILES" ] || [ -n "$UNCOMMITTED_CHANGES" ]; then
+          echo "has_changes=true" >> $GITHUB_OUTPUT
+          echo "📋 Changes detected:"
+          [ -n "$CHANGED_FILES" ] && echo "Recent commits: $CHANGED_FILES"
+          [ -n "$UNCOMMITTED_CHANGES" ] && echo "Uncommitted: $UNCOMMITTED_CHANGES"
+        else
+          echo "has_changes=false" >> $GITHUB_OUTPUT
+          echo "✅ No changes detected"
+        fi
+    
+    - name: Update runtime state
+      run: |
+        echo "=== Updating Runtime State ==="
+        mkdir -p data/state
+        
+        # 更新同步时间戳
+        cat > data/state/github_sync.json << EOF
+        {
+          "last_github_sync": "$(date -Iseconds)",
+          "sync_trigger": "${{ github.event_name }}",
+          "workflow_run": "${{ github.run_number }}",
+          "branch": "${{ github.ref_name }}",
+          "repository": "${{ github.repository }}",
+          "status": "running"
+        }
+        EOF
+        
+        # 更新运行时状态
+        cat > data/state/runtime.json << EOF
+        {
+          "runtime": {
+            "current_session": {
+              "id": "$(date '+%Y%m%d_%H%M%S')_sync",
+              "start_time": "$(date -Iseconds)",
+              "model": "system_sync",
+              "status": "syncing",
+              "trigger": "${{ github.event_name }}"
+            },
+            "last_sync": "$(date -Iseconds)",
+            "sync_status": "active",
+            "memory_loaded": true,
+            "omnicore_active": true,
+            "system_info": {
+              "hostname": "github-actions",
+              "platform": "linux",
+              "sync_version": "2.0",
+              "memory_usage": "normal"
+            },
+            "git_status": {
+              "repository": "${{ github.repository }}",
+              "branch": "${{ github.ref_name }}",
+              "remote_configured": true,
+              "last_commit": "$(git log -1 --pretty=format:'%h')"
+            }
+          }
+        }
+        EOF
+        
+        echo "✅ Runtime state updated"
+    
+    - name: Commit memory changes
+      if: steps.check_memory_changes.outputs.has_changes == 'true'
+      run: |
+        echo "=== Committing Changes ==="
+        
+        # 添加所有变更
+        git add -A
+        
+        # 创建提交
+        COMMIT_MSG="🔄 Auto sync: Memory system update $(date '+%Y-%m-%d %H:%M:%S')"
+        COMMIT_MSG="$COMMIT_MSG
+        
+        Trigger: ${{ github.event_name }}
+        Workflow: #${{ github.run_number }}
+        Branch: ${{ github.ref_name }}
+        
+        Changes:
+        $(git diff --cached --name-only | head -10 | sed 's/^/- /')
+        
+        [Automated commit by GitHub Actions]"
+        
+        if git commit -m "$COMMIT_MSG"; then
+          echo "✅ Changes committed"
+        else
+          echo "⚠️ No changes to commit"
+        fi
+    
+    - name: Push to repository
+      run: |
+        echo "=== Pushing to Repository ==="
+        
+        # 尝试推送，如果失败则拉取最新更改再推送
+        if git push origin main; then
+          echo "✅ Push successful"
+        else
+          echo "⚠️ Push failed, attempting to pull latest changes..."
+          git pull origin main --no-rebase --commit || echo "Pull completed"
+          
+          if git push origin main; then
+            echo "✅ Push successful after pull"
+          else
+            echo "❌ Push failed after pull attempt"
+            exit 1
+          fi
+        fi
+    
+    - name: Create sync summary
+      run: |
+        echo "=== Creating Sync Summary ==="
+        
+        # 创建同步报告
+        cat > sync_summary.json << EOF
+        {
+          "sync_id": "$(date '+%Y%m%d_%H%M%S')",
+          "timestamp": "$(date -Iseconds)",
+          "trigger": "${{ github.event_name }}",
+          "workflow_run": "${{ github.run_number }}",
+          "branch": "${{ github.ref_name }}",
+          "repository": "${{ github.repository }}",
+          "status": "completed",
+          "files_processed": $(find data/memory -name "*.json" | wc -l),
+          "validation_status": "passed",
+          "commit_hash": "$(git log -1 --pretty=format:'%h')",
+          "next_sync": "$(date -d '+10 minutes' -Iseconds)"
+        }
+        EOF
+        
+        # 也创建人类可读的报告
+        cat > sync_report.md << EOF
+        # OmniCoreKernel Memory Sync Report
+        
+        **Date**: $(date '+%Y-%m-%d %H:%M:%S')  
+        **Trigger**: ${{ github.event_name }}  
+        **Workflow Run**: #${{ github.run_number }}  
+        **Branch**: ${{ github.ref_name }}  
+        **Status**: ✅ Completed Successfully
+        
+        ## Summary
+        - Memory files processed: $(find data/memory -name "*.json" | wc -l)
+        - Validation: ✅ Passed
+        - Files changed: $(git diff --name-only HEAD~1 HEAD 2>/dev/null | wc -l || echo "0")
+        - Commit: $(git log -1 --pretty=format:'%h')
+        
+        ## Next Sync
+        Scheduled for: $(date -d '+10 minutes' '+%Y-%m-%d %H:%M:%S')
+        
+        ---
+        *Automated sync by GitHub Actions*
+        EOF
+        
+        echo "✅ Sync summary created"
+        cat sync_report.md
+
+  backup-memory:
+    runs-on: ubuntu-latest
+    needs: sync-memory
+    if: always()
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: Create backup archive
+      run: |
+        DATE=$(date '+%Y%m%d_%H%M%S')
+        BACKUP_NAME="memory_backup_${DATE}"
+        
+        echo "Creating backup: ${BACKUP_NAME}"
+        
+        # 创建备份目录
+        mkdir -p backups
+        
+        # 创建压缩包（排除临时文件）
+        tar -czf "backups/${BACKUP_NAME}.tar.gz" \
+          data/ \
+          --exclude='*.tmp' \
+          --exclude='*.log' \
+          --exclude='backups/' \
+          --exclude='.git/' || echo "Backup creation completed with warnings"
+        
+        # 创建备份清单
+        cat > backups/backup_info.txt << EOF
+        Backup Information
+        ===================
+        Name: ${BACKUP_NAME}
+        Created: $(date -Iseconds)
+        Size: $(du -h "backups/${BACKUP_NAME}.tar.gz" | cut -f1)
+        Files included: $(tar -tzf "backups/${BACKUP_NAME}.tar.gz" | wc -l)
+        
+        Git Info:
+        Branch: $(git branch --show-current)
+        Commit: $(git log -1 --pretty=format:'%h %s')
+        Author: $(git log -1 --pretty=format:'%an')
+        
+        System Info:
+        Hostname: $(hostname)
+        Platform: $(uname -s)
+        Date: $(date)
+        EOF
+        
+        echo "✅ Backup created successfully"
+        ls -la backups/

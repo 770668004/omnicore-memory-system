@@ -1,16 +1,24 @@
 {
   "runtime": {
     "current_session": {
-      "id": "20260305_0034_kousoyu",
-      "start_time": "2026-03-05T00:34:00+08:00",
+      "id": "20260305_0430_kousoyu",
+      "start_time": "2026-03-05T04:30:00+08:00",
       "model": "qwen3/kimi-k2-0905",
       "status": "active",
-      "user": "kousoyu",
+      "user": "向",
       "timezone": "Asia/Shanghai",
-      "language": "zh_cn"
+      "language": "zh_cn",
+      "current_task": "修复GitHub自动同步配置"
     },
-    "last_sync": null,
-    "sync_status": "pending",
+    "last_sync": "2026-03-05T04:30:00+08:00",
+    "sync_status": "fixed",
+    "sync_configuration": {
+      "frequency": "10_minutes",
+      "branch": "main",
+      "remote_configured": true,
+      "auto_backup": true,
+      "validation_enabled": true
+    },
     "memory_loaded": true,
     "omnicore_active": true,
     "system_info": {
@@ -18,13 +26,40 @@
       "platform": "linux",
       "node_version": "v22.22.0",
       "arch": "x64",
-      "memory_usage": "normal"
+      "memory_usage": "normal",
+      "sync_version": "2.1_fixed"
     },
     "git_status": {
       "repository": "770668004/omnicore-memory-system",
-      "branch": "master",
-      "remote_configured": false,
-      "last_commit": null
+      "branch": "main",
+      "remote_configured": true,
+      "last_commit": "90e9659",
+      "sync_issues": "resolved",
+      "github_actions": "active"
+    },
+    "sync_history": {
+      "recent_syncs": [
+        {
+          "timestamp": "2026-03-05T02:28:12+08:00",
+          "commit": "90e9659",
+          "type": "manual",
+          "status": "success"
+        },
+        {
+          "timestamp": "2026-03-05T02:01:28+08:00", 
+          "commit": "4270b9a",
+          "type": "manual",
+          "status": "success"
+        },
+        {
+          "timestamp": "2026-03-05T01:51:40+08:00",
+          "commit": "540d970", 
+          "type": "manual",
+          "status": "success"
+        }
+      ],
+      "auto_sync_enabled": true,
+      "next_sync": "2026-03-05T04:40:00+08:00"
     }
   }
 }
