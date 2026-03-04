@@ -96,3 +96,95 @@ GitHub Actions会自动同步记忆变更，无需手动操作。
 ## 📞 支持
 
 如有问题请在GitHub Issues中反馈。
+## 🚀 快速开始
+
+### 基础使用
+```bash
+# 查看系统状态
+./scripts/advanced_memory.sh show
+
+# 添加新的学习记忆
+./scripts/advanced_memory.sh add learning '学会了新的Python技巧' high technology 'skill,improvement'
+
+# 搜索记忆内容
+./scripts/advanced_memory.sh search "Python"
+
+# 查看详细统计
+./scripts/advanced_memory.sh stats
+```
+
+### 高级使用
+```bash
+# 智能清理过期记忆
+./scripts/smart_cleanup.sh cleanup
+
+# 完整清理和压缩
+./scripts/smart_cleanup.sh full
+
+# 系统完整性检查
+./omnicore_final_check.sh
+```
+
+### 自动功能
+- **实时同步**: 每10分钟自动同步到GitHub
+- **自动备份**: 每小时创建备份
+- **智能清理**: 每周自动清理过期记忆
+- **完整性检查**: 定期系统健康检查
+```
+
+echo "✅ 使用示例已添加到README"
+
+## 🚀 快速开始
+
+### 基础使用
+```bash
+# 查看系统状态
+./scripts/advanced_memory.sh show
+
+# 添加新的学习记忆
+./scripts/advanced_memory.sh add learning '学会了新的Python技巧' high technology 'skill,improvement'
+
+# 搜索记忆内容
+./scripts/advanced_memory.sh search "Python"
+
+# 查看详细统计
+./scripts/advanced_memory.sh stats
+```
+
+### 高级使用
+```bash
+# 智能清理过期记忆
+./scripts/smart_cleanup.sh cleanup
+
+# 完整清理和压缩
+./scripts/smart_cleanup.sh full
+
+# 系统完整性检查
+./omnicore_final_check.sh
+```
+
+### 自动功能
+- **实时同步**: 每10分钟自动同步到GitHub
+- **自动备份**: 每小时创建备份
+- **智能清理**: 每周自动清理过期记忆
+- **完整性检查**: 定期系统健康检查
+```EOF
+
+echo "✅ 使用示例已添加到README"
+
+## 🚀 快速开始
+
+### 基础使用
+```bash
+# 查看系统状态
+./scripts/advanced_memory.sh show
+
+# 添加新的学习记忆
+./scripts/advanced_memory.sh add learning '学会了新的Python技巧' high technology 'skill,improvement'
+
+# 搜索记忆内容
+./scripts/advanced_memory.sh search 'Python'
+
+# 查看详细统计
+./scripts/advanced_memory.sh stats
+```
