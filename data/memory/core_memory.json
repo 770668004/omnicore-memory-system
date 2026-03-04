@@ -17,7 +17,7 @@
       "id": "user_profile_001",
       "content": "用户向一，邮箱：770668004@qq.com，时区：Asia/Shanghai，语言偏好：简体中文",
       "priority": "high",
-      "timestamp": "2026-03-05T00:34:00+08:00",
+      "timestamp": "2026-03-05T00:55:29+08:00",
       "category": "user",
       "encryption": false,
       "tags": [
@@ -67,14 +67,27 @@
         "github_ready",
         "memory_system"
       ]
+    },
+    {
+      "id": "name_correction_20260305_0054",
+      "content": "修正用户名称：从\"向\"更正为\"向一\" - 用户要求同步",
+      "priority": "medium",
+      "timestamp": "2026-03-05T00:55:29+08:00",
+      "category": "system",
+      "encryption": false,
+      "tags": [
+        "name_correction",
+        "user_request",
+        "sync_required"
+      ]
     }
   ],
   "metadata": {
     "version": "1.0.0",
-    "last_updated": "2026-03-05T00:35:00+08:00",
+    "last_updated": "2026-03-05T00:55:29+08:00",
     "initialized_by": "omnicore_kernel",
     "session_id": "20260305_0034_kousoyu",
-    "total_memories": 5,
+    "total_memories": 6,
     "categories": [
       "system",
       "user",
