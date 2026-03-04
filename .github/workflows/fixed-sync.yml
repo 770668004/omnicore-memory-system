@@ -10,7 +10,7 @@ on:
     branches: [ main ]
   schedule:
     # 每10分钟自动同步一次
-    - cron: '*/30 * * * *'
+    - cron: '0 * * * *'
   workflow_dispatch:
 
 jobs:

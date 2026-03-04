@@ -2,7 +2,7 @@
   "sync_optimization": {
     "optimization_id": "frequency_adjustment_20260305_0440",
     "timestamp": "2026-03-05T04:40:00+08:00",
-    "decision": "30_minutes_optimization",
+    "decision": "60_minutes_optimization",
     "reasoning": {
       "hardware_analysis": {
         "cpu": "Intel i5-1240P (12th Gen, 10-core)",
@@ -25,15 +25,15 @@
       }
     },
     "comparison": {
-      "previous_setting": "10_minutes",
-      "new_setting": "30_minutes", 
-      "sync_reduction": "66_percent",
-      "efficiency_gain": "optimal_balance",
+      "previous_setting": "30_minutes",
+      "new_setting": "60_minutes", 
+      "sync_reduction": "50_percent",
+      "efficiency_gain": "enhanced_balance",
       "real_time_adequacy": "maintained"
     },
     "recommendation": {
       "confidence": "high",
-      "rationale": "基于硬件配置和实际需求的智能优化",
+      "rationale": "基于深度分析：60分钟是记忆完整性与自然时间感知的最佳平衡",
       "expected_benefits": [
         "减少系统开销",
         "延长硬件寿命", 
